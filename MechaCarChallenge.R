@@ -25,3 +25,13 @@ total_summary
 # Create a lot summary DataFrame.
 lot_summary <- Suspension_Coil %>% group_by(Manufacturing_Lot) %>% summarize(Mean = mean(PSI), Median = median(PSI), Variance = sd(PSI)*sd(PSI), SD = sd(PSI))
 lot_summary
+
+
+# Deliverable 3 
+
+# Use t.test function to determine the PSI. 
+t.test(Suspension_Coil$PSI, mu=1500)
+
+t.test(subset(Suspension_Coil,Manufacturing_Lot == "Lot1")$PSI, mu=1500) # Fail to reject
+t.test(subset(Suspension_Coil,Manufacturing_Lot == "Lot2")$PSI, mu=1500) # Fail to reject
+t.test(subset(Suspension_Coil,Manufacturing_Lot == "Lot3")$PSI, mu=1500) # Reject null hypothesis
