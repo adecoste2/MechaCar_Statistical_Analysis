@@ -32,6 +32,31 @@
 ![t_test4](https://github.com/adecoste2/MechaCar_Statistical_Analysis/blob/main/Images/t_test4.png?raw=true)
 * When the t-test was performed on Lot3 data the results showed a p-value lower (p = 0.04) than the significance level of p = 0.05. Therefore the null hypothesis is rejected which leads to the conclusion that there is reason to believe the PSI is different than the mean of 1500 in Lot3.
 
+## Study Design: MechaCar vs Competition
+A statistical study that could quantify how the MechaCar performs against it's competition would first need historical product data on both MechaCar and it's competitor's comparable vehicles over the last 3-5. 
+
+### Metrics to be Tested
+* Cost  
+* Safety Rating
+
+
+### The Null or Alternative Hypothesis
+Cost:
+Null Hypothesis (H0): MechaCar is priced correctly based on its performance of key metrics within similar vehicle classes.
+Alternative Hypothesis (Ha): MechaCar is not priced correctly based on its performance of key metrics within similar vehicle classes.
+
+Safety Rating: 
+Null Hypothesis (H0): MechaCar has a high safety rating based on its performance of key metrics within similar vehicle classes.
+Alternative Hypothesis (Ha): MechaCar does not have ahigh safety rating based on its performance of key metrics within similar vehicle classes.
+
+### Statistical Testing
+* The statistical testing used to test the hypothesis would be compare costs between MechaCars and its competitors of similar vehicle classes. This can be done through a two-sample t-test. The results would show if the sales are significiantly different and if so, MechaCar can appropriately price their vehicles according to the results.
+
+* To compare Safety Ratings, the study can compare MechaCar safety rating data against its competitor's safety rating data of similar vehicle classes. This can be done through a two-sample t-test. The results would show if the safety ratings are significiantly different. If MechaCar's safety ratings are lower than its competitors they can address the issues to increase their vehicles security ratings. If MechaCar's safety ratings are higher then they can use the information to market the safety of their vehicles. 
+
+### Data Needed
+The data needed to run the statistical testing would be cost and safety rating data of vehicles of similar class from MechaCar and their competitors over the last 3-5 years. 
+
 
 
 
